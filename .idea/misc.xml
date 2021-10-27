@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Rivaldo/AndroidStudioProjects/BringUp/app/src/main/res/drawable/button_signout.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/Rivaldo/AndroidStudioProjects/BringUp/app/src/main/res/drawable/editext_border.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/Rivaldo/AndroidStudioProjects/BringUp/app/src/main/res/drawable/ic_baseline_arrow_back_.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/Rivaldo/AndroidStudioProjects/BringUp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/Rivaldo/AndroidStudioProjects/BringUp/app/src/main/res/drawable/ic_search.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/Rivaldo/AndroidStudioProjects/BringUp/app/src/main/res/drawable/line.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/Rivaldo/AndroidStudioProjects/BringUp/app/src/main/res/drawable/navbar_bawah.xml" value="0.2712820512820513" />
+        <entry key="..\:/Users/Rivaldo/AndroidStudioProjects/BringUp/app/src/main/res/drawable/rectangle_scroll.xml" value="0.2712820512820513" />
+        <entry key="..\:/Users/Rivaldo/AndroidStudioProjects/BringUp/app/src/main/res/drawable/rounded.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/Rivaldo/AndroidStudioProjects/BringUp/app/src/main/res/drawable/rounded_profile.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/Rivaldo/AndroidStudioProjects/BringUp/app/src/main/res/drawable/search_bar.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/Rivaldo/AndroidStudioProjects/BringUp/app/src/main/res/layout/activity_kumpulan_jawaban.xml" value="0.2" />
+        <entry key="..\:/Users/Rivaldo/AndroidStudioProjects/BringUp/app/src/main/res/layout/activity_main.xml" value="0.136" />
+        <entry key="..\:/Users/Rivaldo/AndroidStudioProjects/BringUp/app/src/main/res/layout/activity_personal_data.xml" value="0.264" />
+        <entry key="..\:/Users/Rivaldo/AndroidStudioProjects/BringUp/app/src/main/res/layout/activity_profile.xml" value="0.264" />
+        <entry key="..\:/Users/Rivaldo/AndroidStudioProjects/BringUp/app/src/main/res/layout/activity_splashscreen.xml" value="0.2" />
+        <entry key="..\:/Users/Rivaldo/AndroidStudioProjects/BringUp/app/src/main/res/menu/bottom_menu.xml" value="0.259375" />
+        <entry key="..\:/Users/Rivaldo/AndroidStudioProjects/BringUp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2755208333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

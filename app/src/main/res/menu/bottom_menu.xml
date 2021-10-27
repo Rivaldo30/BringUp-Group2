@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cnb_unselectedColor="#6C6C6C">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:title="Home"
+        app:cnb_iconColor="@color/navbar"/>
+
+    <item
+        android:id="@+id/jawaban"
+        android:icon="@drawable/jawaban"
+        android:title="Jawaban"
+        app:cnb_iconColor="@color/navbar"/>
+
+    <item
+        android:id="@+id/reward"
+        android:icon="@drawable/reward"
+        android:title="Reward"
+        app:cnb_iconColor="@color/navbar"/>
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/profile"
+        android:title="Profile"
+        app:cnb_iconColor="@color/navbar"/>
+
+</menu>
