@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".kumpulan_jawaban">
 
-    <EditText
+    <androidx.appcompat.widget.SearchView
         android:id="@+id/Search_form"
         android:layout_width="316dp"
         android:layout_height="43dp"
