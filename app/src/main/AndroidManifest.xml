@@ -10,32 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
         <activity
-            android:name=".To_Quiz"
-            android:exported="true" />
-        <activity
-            android:name=".Quiz"
-            android:exported="true" />
-        <activity
-            android:name=".Finisih_Quiz"
-            android:exported="true" />
-        <activity
-            android:name=".Settings"
-            android:exported="true" />
-        <activity
-            android:name=".Login"
-            android:exported="true" />
-        <activity
             android:name=".PersonalData"
             android:exported="true" />
         <activity
-            android:name=".SignUp"
-            android:exported="true" />
-        <activity
-            android:name=".RewardMenjawab"
-            android:exported="true"/>
-        <activity
             android:name=".Profile"
-            android:exported="true" />
+            android:exported="true"/>
         <activity
             android:name=".kumpulan_jawaban"
             android:exported="true" />
