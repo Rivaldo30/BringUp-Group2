@@ -7,44 +7,46 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.TextView;
+import android.widget.Button;
+import android.widget.ImageView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class Profile extends AppCompatActivity {
+public class To_Quiz extends AppCompatActivity {
 
-    TextView tprofil, tsettings;
+    ImageView kls1,back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
+        setContentView(R.layout.activity_to_quiz);
+
+        back = (ImageView) findViewById(R.id.btn_back);
+        kls1 = (ImageView) findViewById(R.id.kelas1);
+
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent kembali = new Intent(To_Quiz.this, MainActivity.class);
+                startActivity(kembali);
+                finish();
+            }
+        });
+
+
+        kls1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent goquiz = new Intent(To_Quiz.this, Quiz.class);
+                startActivity(goquiz);
+                finish();
+            }
+        });
+
+
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-
-        tprofil = (TextView) findViewById(R.id.toProfile);
-        tsettings = (TextView) findViewById(R.id.toSettings);
-
-
-        tprofil.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent profil = new Intent(Profile.this, PersonalData.class);
-                startActivity(profil);
-            }
-        });
-
-
-        tsettings.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent setting  = new Intent(Profile.this, Settings.class);
-                startActivity(setting);
-            }
-        });
-
-
-
         bottomNavigationView.setSelectedItemId(R.id.profile);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {

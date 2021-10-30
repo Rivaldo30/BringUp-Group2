@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#FCFAFD"
     tools:context=".Settings">
 
     <ImageView
-        android:id="@+id/imageView19"
+        android:id="@+id/btn_back"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginStart="16dp"
@@ -32,7 +33,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.093"
-        app:layout_constraintStart_toEndOf="@+id/imageView19"
+        app:layout_constraintStart_toEndOf="@+id/btn_back"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
@@ -53,12 +54,12 @@
         android:id="@+id/switch1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="211dp"
         android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        android:thumb="@drawable/thumb"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.724"
-        app:layout_constraintStart_toEndOf="@+id/textView18"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:track="@drawable/track" />
 
     <TextView
         android:id="@+id/textView19"
@@ -77,12 +78,13 @@
         android:id="@+id/switchCompat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="198dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:thumb="@drawable/thumb"
+        app:layout_constraintEnd_toEndOf="@+id/switch1"
         app:layout_constraintHorizontal_bias="0.733"
-        app:layout_constraintStart_toEndOf="@+id/textView19"
-        app:layout_constraintTop_toBottomOf="@+id/switch1" />
+        app:layout_constraintStart_toStartOf="@+id/switch1"
+        app:layout_constraintTop_toBottomOf="@+id/switch1"
+        app:track="@drawable/track" />
 
     <TextView
         android:id="@+id/textView21"
@@ -106,6 +108,7 @@
         android:text="Bahasa Indonesia"
         android:textColor="#334568"
         android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView21"
         app:layout_constraintEnd_toStartOf="@+id/imageView22"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textView21"
@@ -116,9 +119,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="28dp"
         android:src="@drawable/arrow_right"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/switchCompat"
+        app:layout_constraintHorizontal_bias="0.962"
+        app:layout_constraintStart_toEndOf="@+id/textView21"
         app:layout_constraintTop_toBottomOf="@+id/switchCompat" />
 
     <TextView
@@ -138,12 +142,9 @@
         android:id="@+id/imageView23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="191dp"
         android:layout_marginTop="8dp"
         android:src="@drawable/arrow_right"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.608"
-        app:layout_constraintStart_toEndOf="@+id/textView22"
+        app:layout_constraintEnd_toEndOf="@+id/imageView22"
         app:layout_constraintTop_toBottomOf="@+id/imageView22" />
 
     <TextView
@@ -163,12 +164,9 @@
         android:id="@+id/imageView24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="195dp"
         android:layout_marginTop="12dp"
         android:src="@drawable/arrow_right"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.611"
-        app:layout_constraintStart_toEndOf="@+id/textView23"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
         app:layout_constraintTop_toBottomOf="@+id/imageView23" />
 
     <Button
@@ -187,15 +185,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <com.ismaeldivita.chipnavigation.ChipNavigationBar
-        android:id="@+id/navbarhome"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        style="Widget.MaterialComponents.BottomNavigationView.PrimarySurface"
         android:layout_width="match_parent"
         android:layout_height="89dp"
-        android:background="@drawable/rounded"
-        android:elevation="16dp"
-        android:gravity="center"
-        android:padding="8dp"
-        app:cnb_menuResource="@menu/bottom_menu"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:backgroundTint="@color/white"
+        app:itemIconTint="@color/nav_color"
+        app:itemRippleColor="@color/navbar"
+        app:itemTextColor="@color/nav_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

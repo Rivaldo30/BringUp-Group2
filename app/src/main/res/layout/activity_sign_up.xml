@@ -17,77 +17,96 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="17dp"
         android:text="Create\nYour Account"
         android:textColor="@color/black"
-        android:textSize="32dp" />
+        android:textSize="35dp"
+        android:fontFamily="@font/product_sans_regular"/>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:orientation="horizontal">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
-            android:layout_width="170dp"
+            android:id="@+id/et_firtsname"
+            android:layout_width="175dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Firstname"
-            android:textColor="#AE000000" />
+            android:hint="Firstname"
+            android:fontFamily="@font/product_sans_regular"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:padding="12dp"/>
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/et_lastname"
+            android:layout_width="175dp"
+            android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_marginStart="26dp"
             android:ems="10"
+            android:fontFamily="@font/product_sans_regular"
+            android:hint="Lastname"
             android:inputType="textPersonName"
-            android:text="Lastname"
-            android:textColor="#AD000000" />
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
     </LinearLayout>
 
     <EditText
-        android:id="@+id/editTextPhone"
+        android:id="@+id/et_phonenumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:ems="10"
+        android:fontFamily="@font/product_sans_regular"
+        android:hint="Phone Number"
         android:inputType="phone"
-        android:text="Phone Number"
-        android:textColor="#AD000000"
-        android:layout_marginTop="16dp"/>
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress3"
+        android:id="@+id/et_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:text="Email"
-        android:textColor="#AD000000"
+        android:hint="Email"
+        android:fontFamily="@font/product_sans_regular"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:padding="12dp"
         android:layout_marginTop="16dp"/>
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/et_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPassword"
-        android:text="Password"
-        android:textColor="#AD000000"
+        android:hint="Password"
+        android:fontFamily="@font/product_sans_regular"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:padding="12dp"
         android:layout_marginTop="16dp"/>
 
     <Button
-        android:id="@+id/signIn"
+        android:id="@+id/btnSignup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Sign Up"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/button"/>
+        android:layout_marginTop="18dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/product_sans_regular"
+        android:background="@drawable/button_signout"/>
 
     <TextView
         android:id="@+id/textView2"
@@ -96,29 +115,32 @@
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
         android:gravity="center"
-        android:text="____________Or sign up with____________"
+        android:textAllCaps="false"
+        android:text="--- Or sign up with ---"
         android:textColor="@color/black" />
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="79dp"
         android:layout_gravity="center"
         android:gravity="center"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/facebook" />
+            android:id="@+id/imagegoogle"
+            android:layout_width="92dp"
+            android:layout_height="41dp"
+            android:elevation="10dp"
+            app:srcCompat="@drawable/google" />
 
         <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
+            android:id="@+id/imagefacebook"
+            android:layout_width="92dp"
+            android:layout_height="41dp"
             android:layout_marginStart="18dp"
-            app:srcCompat="@drawable/google" />
+            android:elevation="10dp"
+            app:srcCompat="@drawable/facebook" />
     </LinearLayout>
 
 

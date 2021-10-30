@@ -62,8 +62,7 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/User_Name"
-        app:layout_constraintVertical_bias="0.022"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.022" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -89,50 +88,35 @@
         android:textColor="@color/dark_blue"
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.126"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/Search_form"
         app:layout_constraintTop_toBottomOf="@+id/Search_form"
         app:layout_constraintVertical_bias="0.01" />
 
-    <ScrollView
-        android:id="@+id/scrollView3"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/card1"
         android:layout_width="105.83dp"
         android:layout_height="142.06dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="10dp"
         android:src="@drawable/ipa"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.154"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
         android:layout_marginTop="5dp"
         android:fontFamily="@font/product_sans_black"
         android:text="IPA"
         android:textColor="@color/dark_blue"
         android:textSize="18dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintEnd_toEndOf="@+id/card1"
+        app:layout_constraintStart_toStartOf="@+id/card1"
+        app:layout_constraintTop_toBottomOf="@+id/card1" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -140,23 +124,25 @@
         android:layout_height="142.06dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:src="@drawable/ips"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintBottom_toBottomOf="@+id/card1"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/card1"
+        app:layout_constraintTop_toTopOf="@+id/card1" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="94.26dp"
         android:layout_marginTop="4dp"
         android:fontFamily="@font/product_sans_black"
         android:text="IPS"
         android:textColor="@color/dark_blue"
         android:textSize="18dp"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <ImageView
@@ -165,73 +151,67 @@
         android:layout_height="142.06dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="10.75dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
         android:src="@drawable/mtk"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="94.26dp"
         android:layout_marginTop="5dp"
         android:fontFamily="@font/product_sans_black"
         android:text="MTK"
         android:textColor="@color/dark_blue"
         android:textSize="18dp"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
-    <LinearLayout
+    <ImageView
         android:id="@+id/linearlayout"
-        android:layout_width="420dp"
-        android:layout_height="371dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="18dp"
         android:background="@drawable/rect7"
-        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="0.0"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="43dp"
-            android:fontFamily="@font/product_sans_black"
-            android:gravity="top"
-            android:text="Bantu Menjawab"
-            android:textColor="@color/dark_blue"
-            android:textSize="16dp" />
-
-
-    </LinearLayout>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="410dp"
-        android:layout_height="258dp"
-        android:layout_marginEnd="1dp"
-        app:layout_constraintBottom_toBottomOf="@+id/scrollView3"
-        app:layout_constraintEnd_toEndOf="parent"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="42dp"
+        android:fontFamily="@font/product_sans_black"
+        android:gravity="top"
+        android:text="Bantu Menjawab"
+        android:textColor="@color/dark_blue"
+        android:textSize="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toTopOf="@+id/linearlayout" />
 
-    <com.ismaeldivita.chipnavigation.ChipNavigationBar
-        android:id="@+id/navbarhome"
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        style="Widget.MaterialComponents.BottomNavigationView.PrimarySurface"
         android:layout_width="match_parent"
         android:layout_height="89dp"
-        android:background="@drawable/rounded"
-        android:elevation="16dp"
-        android:padding="8dp"
-        android:gravity="center"
-        app:cnb_menuResource="@menu/bottom_menu"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:backgroundTint="@color/white"
+        app:itemIconTint="@color/nav_color"
+        app:itemRippleColor="@color/navbar"
+        app:itemTextColor="@color/nav_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_menu" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
