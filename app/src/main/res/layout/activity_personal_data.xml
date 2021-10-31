@@ -7,7 +7,7 @@
     tools:context=".PersonalData">
 
     <ImageView
-        android:id="@+id/imageView19"
+        android:id="@+id/btnback"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginStart="16dp"
@@ -22,19 +22,14 @@
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="211dp"
-        android:layout_marginBottom="578dp"
-        android:fontFamily="@font/product_sans_black"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/product_sans_regular"
         android:text="Edit Profile"
         android:textColor="@color/black"
         android:textSize="22dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.227"
-        app:layout_constraintStart_toEndOf="@+id/imageView19"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025" />
+        app:layout_constraintBottom_toBottomOf="@+id/btnback"
+        app:layout_constraintStart_toEndOf="@+id/btnback"
+        app:layout_constraintTop_toTopOf="@+id/btnback" />
 
     <ImageView
         android:id="@+id/imageView18"
@@ -42,8 +37,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:src="@drawable/profileorg"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editText3"
+        app:layout_constraintStart_toStartOf="@+id/editText"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
@@ -63,14 +58,16 @@
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="192dp"
-        android:fontFamily="@font/product_sans_black"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/product_sans_regular"
         android:text="First Name"
         android:textColor="#848DA3"
         android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView18" />
 
     <EditText
         android:id="@+id/editText"
@@ -79,7 +76,7 @@
         android:layout_marginTop="4dp"
         android:paddingStart="12dp"
         android:textSize="13dp"
-        android:fontFamily="@font/product_sans_black"
+        android:fontFamily="@font/product_sans_regular"
         android:textColor="#334568"
         android:background="@drawable/editext_border"
         app:layout_constraintStart_toStartOf="@+id/textView12"
@@ -90,13 +87,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="116dp"
-        android:layout_marginTop="192dp"
-        android:fontFamily="@font/product_sans_black"
+        android:fontFamily="@font/product_sans_regular"
         android:text="Last Name"
         android:textColor="#848DA3"
         android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="@+id/editText3"
         app:layout_constraintStart_toEndOf="@+id/textView12"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/textView12" />
 
     <EditText
         android:id="@+id/editText3"
@@ -106,7 +104,7 @@
         android:layout_marginTop="4dp"
         android:layout_marginEnd="22dp"
         android:textSize="13dp"
-        android:fontFamily="@font/product_sans_black"
+        android:fontFamily="@font/product_sans_regular"
         android:textColor="#334568"
         android:paddingStart="12dp"
         android:background="@drawable/editext_border"
@@ -119,7 +117,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
-        android:fontFamily="@font/product_sans_black"
+        android:fontFamily="@font/product_sans_regular"
         android:text="Email"
         android:textColor="#848DA3"
         android:textSize="12dp"
@@ -135,7 +133,7 @@
         android:inputType="textEmailAddress"
         android:paddingStart="12dp"
         android:textSize="13dp"
-        android:fontFamily="@font/product_sans_black"
+        android:fontFamily="@font/product_sans_regular"
         android:textColor="#334568"
         app:layout_constraintEnd_toEndOf="@+id/editText3"
         app:layout_constraintStart_toStartOf="@+id/textView12"
@@ -146,7 +144,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:fontFamily="@font/product_sans_black"
+        android:fontFamily="@font/product_sans_regular"
         android:text="Password"
         android:textColor="#848DA3"
         android:textSize="12dp"
@@ -162,7 +160,7 @@
         android:inputType="textPassword"
         android:paddingStart="12dp"
         android:textSize="13dp"
-        android:fontFamily="@font/product_sans_black"
+        android:fontFamily="@font/product_sans_regular"
         android:textColor="#334568"
         app:layout_constraintEnd_toEndOf="@+id/editText3"
         app:layout_constraintHorizontal_bias="0.0"
@@ -174,7 +172,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:fontFamily="@font/product_sans_black"
+        android:fontFamily="@font/product_sans_regular"
         android:text="Phone Number"
         android:textColor="#848DA3"
         android:textSize="12dp"
@@ -189,7 +187,7 @@
         android:paddingStart="15dp"
         android:text="+62"
         android:textSize="13dp"
-        android:fontFamily="@font/product_sans_black"
+        android:fontFamily="@font/product_sans_regular"
         android:textColor="#334568"
         android:background="@drawable/editext_border"
         app:layout_constraintStart_toStartOf="@+id/textView12"
@@ -204,7 +202,7 @@
         android:background="@drawable/editext_border"
         android:inputType="number"
         android:textSize="13dp"
-        android:fontFamily="@font/product_sans_black"
+        android:fontFamily="@font/product_sans_regular"
         android:textColor="#334568"
         app:layout_constraintEnd_toEndOf="@+id/editText3"
         app:layout_constraintStart_toEndOf="@+id/editText5"
@@ -215,7 +213,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:fontFamily="@font/product_sans_black"
+        android:fontFamily="@font/product_sans_regular"
         android:text="Date of Birth"
         android:textColor="#848DA3"
         android:textSize="12dp"
@@ -231,34 +229,39 @@
         android:paddingStart="12dp"
         android:inputType="date"
         android:textSize="13dp"
-        android:fontFamily="@font/product_sans_black"
+        android:fontFamily="@font/product_sans_regular"
         android:textColor="#334568"
         app:layout_constraintEnd_toEndOf="@+id/editText3"
         app:layout_constraintStart_toStartOf="@+id/textView12"
         app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
     <Button
+        android:id="@+id/btnSave"
         android:layout_width="274dp"
         android:layout_height="37dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/button_signout"
-        android:fontFamily="@font/product_sans_black"
+        android:fontFamily="@font/product_sans_regular"
         android:text="Save"
+        android:textAllCaps="false"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextDate"
         app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editTextDate"
         app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
 
-    <com.ismaeldivita.chipnavigation.ChipNavigationBar
-        android:id="@+id/navbarhome"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        style="Widget.MaterialComponents.BottomNavigationView.PrimarySurface"
         android:layout_width="match_parent"
         android:layout_height="89dp"
-        android:background="@drawable/rounded"
-        android:elevation="16dp"
-        android:gravity="center"
-        android:padding="8dp"
-        app:cnb_menuResource="@menu/bottom_menu"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:backgroundTint="@color/white"
+        app:itemIconTint="@color/nav_color"
+        app:itemRippleColor="@color/navbar"
+        app:itemTextColor="@color/nav_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
