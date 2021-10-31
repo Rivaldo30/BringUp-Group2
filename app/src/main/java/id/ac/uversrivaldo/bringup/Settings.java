@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -12,14 +13,27 @@ import android.widget.ImageView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import java.util.Set;
+
 public class Settings extends AppCompatActivity {
 
     ImageView back;
+    Button logout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
+
+        logout = (Button) findViewById(R.id.btnLogout2);
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent keluar = new Intent(Settings.this, Login.class);
+                startActivity(keluar);
+                finish();
+            }
+        });
 
         back = (ImageView) findViewById(R.id.btn_back);
         back.setOnClickListener(new View.OnClickListener() {

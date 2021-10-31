@@ -6,7 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".kumpulan_jawaban">
 
-    <androidx.appcompat.widget.SearchView
+
+
+    <EditText
         android:id="@+id/Search_form"
         android:layout_width="316dp"
         android:layout_height="43dp"
@@ -21,8 +23,7 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.062"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.062" />
 
     <ImageView
         android:id="@+id/imageView"
