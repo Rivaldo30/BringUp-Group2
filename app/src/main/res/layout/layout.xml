@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="246dp"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+
+    <TextView
+        android:id="@+id/soal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:text="SoalSoalSoalSoalSoalSoalSoalSoalSoalSoalSoalSoal                                    SoalSoalSoalSoalSoalSoalSoalSoalSoalSoalSoalSoal                      SoalSoalSoalSoal                                                                                                                        SoalSoalSoalSoal                                                                                            SoalSoalSoalSoal"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/jawaban"
+        android:layout_width="match_parent"
+        android:layout_height="111dp"
+        android:layout_marginTop="14dp"
+        android:text="JawabanJawabanJawabanJawabanJawabanJawabanJawabanJawabanJawabanJawabanJawabanJawabanJawabanJawaban"
+        android:textColor="@color/black" />
+</LinearLayout>

@@ -1,7 +1,155 @@
 <resources>
     <string name="app_name">BringUp</string>
+    <string name="menu_profile">Profile</string>
     <string name="menu_home">Home</string>
     <string name="menu_jawaban">Jawaban</string>
     <string name="menu_reward">Reward</string>
-    <string name="menu_profile">Profile</string>
+    <string name="soal">Soal</string>
+    <string name="jawaban">Jawaban</string>
+    <string name="searching">pencarian</string>
+
+    <string-array name="data_soal">
+        <item>1) Gerakan suatu benda dimana setiap titik pada benda tersebut mempunyai jarak yang tetap terhadap suatu sumbu tertentu, merupakan pengertian dari:
+
+                  A) Gerak Translasi
+
+                  B) Gerak Rotasi
+
+                  C) Perpindahan
+
+                  D) Kelajuan
+
+                  E) Kecepatan</item>
+
+        <item> 2)  Sebuah balok bermassa 1,5 kg didorong ke atas oleh gaya konstan F = 15 N pada bidang miring seperti gambar. Anggap percepatan gravitasi (g) 10 ms-2 dan gesekan antara balok dan bidang miring nol. Usaha total yang dilakukan pada balok adalah …
+
+                  A.    15 J
+                  B.    30 J
+                  C.    35 J
+                  D.    45 J
+                  E.    50 J</item>
+        <item>3) Sebanyak 3 liter gas Argon bersuhu 270C pada tekanan 1 atm (1 atm = 105 Pa) berada di dalam tabung. Jika konstanta gas umum R = 8,314 J m-1K-1 dan banyaknya partikel dalam 1 mol gas 6,02 x 1023 partikel, maka banyak partikel gas Argon dalam tabung tersebut adalah …
+
+                  A.    0,83 x 1023 partikel
+                  B.    0,72 x 1023 partikel
+                  C.    0,42 x 1023 partikel
+                  D.    0,22 x 1023 partikel
+                  E.    0,12 x 1023 partikel</item>
+
+        <item>4) Sebuah partikel berputar  dengan 240 rpm. Jika jari-jari lintasannya 2 m, maka kelajuan linier partikel tersebut adalah:
+
+                  A) 2 π m/s
+                  B) 4 π m/s
+                  C) 6 π m/s
+                  D) 8 π m/s
+                  E) 16 π m/s</item>
+
+        <item>5) Sebuah mobil mulai bergerak dari keadaan diam dengan percepatan tetap 24 m/s2. Maka kecepatan mobil setelah bergerak selama 18 sekon adalah:
+
+                  A) 2 m/s
+                  B) 24 m/s
+                  C) 36 m/s
+                  D) 42 m/s
+                  E) 56 m/s</item>
+
+        <item>6) Suatu kereta api sedang bergerak dengan kelajuan 17 m/s. Ketika melewati tanda akan memasuki stasiun, masinis memperlambat kelajuan kereta api sebesar 2,00 m/s2. Waktu yang diperlukan kereta api sampai kereta api benar-benar berhenti adalah … s.
+
+                A) 3,5
+                B) 8
+                C) 8,5
+                D) 14
+                E) 14,5</item>
+
+        <item>7) Waktu yang diperlukan sebuah mobil yang bergerak dengan percepatan 2 m/s2, untuk mengubah kecepatannya dari 10 m/s menjadi 30 m/s adalah:
+
+                A) 10 s
+                B) 20 s
+                C) 30 s
+                D) 40 s
+                E) 50 s</item>
+
+        <item>8) Sebuah peluru dengan massa 20 gram ditembakkan pada sudut elevasi 600 dan kecepatan 40 m.s-   1 seperti gambar. Jika gesekan dengan udara diabaikan, maka energi kinetik peluru pada titik tertinggi adalah …
+
+                A.     0 joule
+                B.     4 joule
+                C.     8 joule
+                D.     12 joule
+                E.     24 joule</item>
+        <item>9) Sebuah pemancar radio bekerja pada gelombang 1,5 m. Jika cepat rambat gelombang radio 3.108 m/s, pada frekuensi berapakah stasion radio tersebut bekerja!</item>
+
+        <item>10) Suatu sumber bunyi bergerak menjauhi seorang Pendengar yang tidak bergerak dengan kecepatan 108 km/jam. Apabila frekuensinya 120 Hz dan Cepat rambat bunyi di udara 340 m/s, tentukanlah frekuensi yang terdengar oleh Pendengar !</item>
+
+
+    </string-array>
+
+    <string-array name="data_jawaban">
+        <item>
+            Jawaban B.</item>
+        <item>
+            JAWABAN : A
+            Pembahasan :   WTOT = ΣF . s = (15 – 7,5) . 2 = 15 joule</item>
+        <item>
+            JAWABAN : B
+            Pembahasan :
+            *NA adalah bilangan Avogadro = 6,02 x 1023 partikel
+                                         = 0,72.1023 partike</item>
+        <item>
+            Dik :
+            f = 240 rpm =
+            r = 2 m
+            Dit :
+            v = … ?
+            Jawab:
+            ω = 2πf = 2 . π . 4 = 8π rad/s
+            v = . r = 8π . 2 = 16π m/s
+            Jawaban  E.</item>
+
+        <item>
+            Dik : v0 = 0; a = 24 m/s ;  t = 18 s
+            Dit : vt = … ?
+            Jawab: vt = v0 + at
+            = 0 + (24 m/s2) (18 s)
+            vt = 42 m/s
+            Jawaban D.</item>
+        <item>
+            Dik  : v0 = 17 m/s
+            vt = 0   m/s
+            a = – 2 m/s2 (perlambatan)
+            Dit : t ?
+            Jawaban C.</item>
+        <item>
+            Dik: Vt= 30 m/s
+            Vo= 10 m/s
+            a = 2 m/s2
+            Dit : t=…?
+            Jawab :
+            Vt= Vo+ at
+            t = Vt–Voa = 30-102 = 10 s
+
+Jawaban  A.</item>
+        <item>
+            JAWABAN : B
+            Pembahasan :
+            vx = v0 cos α =    40.cos 600 = 20 m/s
+            EK = ½ mv2 = ½.0,02.202 = 4 joule</item>
+        <item>
+            Dik : λ = 1,5 m, v = 3.108 m/s
+            Dit : f = ..?
+            Jawab :
+            f = 2. 108 Hz = 200 MHz</item>
+
+        <item>
+            Dik  :
+            VP    =  0
+            VS    =  108 km/jam  =  108.000/3600  =  30 m/s
+            fS    =  120 Hz
+            V    =  340 m/s
+            Dit  :  fP
+            Jawab
+            fP    =  (V ± V_P)/(V ±V_s ) .fS
+            =  (V+ V_P)/(V+ V_S ) . fS
+            =  (340+0)/(340+30) . 120
+            =  110,27 Hz
+        </item>
+    </string-array>
 </resources>

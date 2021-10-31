@@ -3,8 +3,13 @@ package id.ac.uversrivaldo.bringup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+
 
 import android.app.Activity;
 import android.content.Intent;
@@ -19,15 +24,46 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import nl.joery.animatedbottombar.AnimatedBottomBar;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
     
 
     ImageView card1;
 
+    private RecyclerView rvSoal;
+    private final ArrayList<Soal> list = new ArrayList<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        rvSoal = findViewById(R.id.recycle);
+        rvSoal.setHasFixedSize(true);
+
+
+        list.addAll(getListSoal());
+        showRecyclerList();
+    }
+    public ArrayList<Soal> getListSoal() {
+        String[] dataSoal = getResources().getStringArray(R.array.data_soal);
+
+
+        ArrayList<Soal> listSoal= new ArrayList<>();
+        for (int i = 0; i < dataSoal.length; i++) {
+            Soal soal = new Soal();
+            soal.setSoal(dataSoal[i]);
+            listSoal.add(soal);
+        }
+        return listSoal;
+    }
+
+    private void showRecyclerList(){
+        rvSoal.setLayoutManager(new LinearLayoutManager(this));
+        ListSoalAdapter listSoalAdapter = new ListSoalAdapter(list);
+        rvSoal.setAdapter(listSoalAdapter);
+
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 
@@ -70,5 +106,6 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
+
     }
 }
