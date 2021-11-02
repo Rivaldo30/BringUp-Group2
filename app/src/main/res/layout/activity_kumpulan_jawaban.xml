@@ -44,12 +44,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
         android:fontFamily="@font/product_sans_black"
         android:text="Kumpulan Jawaban"
         android:textColor="@color/dark_blue"
         android:textSize="18dp"
-        app:layout_constraintBottom_toTopOf="@+id/rv_jawaban"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.191"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,16 +55,11 @@
 
 
     <androidx.recyclerview.widget.RecyclerView
-
         android:id="@+id/rv_jawaban"
-
-        android:id="@+id/recyclerView"
-
-        android:layout_width="415dp"
-        android:layout_height="552dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/Search_form"
+        app:layout_constraintStart_toStartOf="@+id/kumpulan_jawaban"
         app:layout_constraintTop_toBottomOf="@+id/kumpulan_jawaban"
         tools:listitem="@layout/layout" />
 

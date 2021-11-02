@@ -13,12 +13,14 @@ public class Soal implements Parcelable {
     protected Soal(Parcel in) {
         soal = in.readString();
         jawaban = in.readString();
+
     }
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(soal);
         dest.writeString(jawaban);
+
     }
 
     @Override
@@ -53,4 +55,5 @@ public class Soal implements Parcelable {
     public void setJawaban(String jawaban) {
         this.jawaban = jawaban;
     }
+
 }

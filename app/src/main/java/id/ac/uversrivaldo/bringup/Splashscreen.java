@@ -10,7 +10,7 @@ import android.view.WindowManager;
 
 public class Splashscreen extends AppCompatActivity {
 
-    private static int splashInterval = 3000;
+    private int splashInterval = 3000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
